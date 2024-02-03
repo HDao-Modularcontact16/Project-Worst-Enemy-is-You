@@ -1,9 +1,11 @@
-[gd_scene format=3 uid="uid://0dwvqose3qeo"]
+[gd_scene load_steps=2 format=3 uid="uid://0dwvqose3qeo"]
+
+[ext_resource type="Script" path="res://Game/Scripts/UI/battle_ui.gd" id="1_bi8o6"]
 
 [node name="BattleUI" type="CanvasLayer"]
+script = ExtResource("1_bi8o6")
 
 [node name="ActionPicking" type="Control" parent="."]
-visible = false
 layout_mode = 3
 anchors_preset = 3
 anchor_left = 1.0
@@ -107,3 +109,10 @@ offset_bottom = 133.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Text"
+
+[connection signal="pressed" from="ActionPicking/VBoxContainer/Attack" to="." method="_on_attack_pressed"]
+[connection signal="pressed" from="ActionPicking/VBoxContainer/Protect" to="." method="_on_protect_pressed"]
+[connection signal="pressed" from="ActionPicking/VBoxContainer/Item" to="." method="_on_item_pressed"]
+[connection signal="mouse_entered" from="AttackMovesDisplay/VBoxContainer/Slash" to="." method="_on_slash_mouse_entered"]
+[connection signal="mouse_entered" from="AttackMovesDisplay/VBoxContainer/High Jump Kick" to="." method="_on_high_jump_kick_mouse_entered"]
+[connection signal="mouse_entered" from="AttackMovesDisplay/VBoxContainer/Magic Carrot Shots" to="." method="_on_magic_carrot_shots_mouse_entered"]
