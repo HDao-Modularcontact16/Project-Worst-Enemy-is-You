@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bld7y0wngi0xm"]
+
+[ext_resource type="Texture2D" uid="uid://bqf25wmaq1krv" path="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_qaxti"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nn6cq"]
+size = Vector2(26, 31)
+
+[node name="DarkBunny" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_qaxti")
+region_enabled = true
+region_rect = Rect2(0, 0, 48.1779, 45)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_nn6cq")

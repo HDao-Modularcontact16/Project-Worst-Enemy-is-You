@@ -3,15 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://bqf25wmaq1krv" path="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="1_l0kqf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_unh8h"]
-size = Vector2(11, 15)
+size = Vector2(26, 30)
 
 [node name="Bunny" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
 texture = ExtResource("1_l0kqf")
 region_enabled = true
 region_rect = Rect2(0, 0, 49.0961, 46.8316)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0.5)
+position = Vector2(-1, 1)
 shape = SubResource("RectangleShape2D_unh8h")

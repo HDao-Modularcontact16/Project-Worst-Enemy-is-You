@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwo1s02561kwc"]
+[gd_scene load_steps=7 format=3 uid="uid://dwo1s02561kwc"]
 
 [ext_resource type="PackedScene" uid="uid://bbphd13y6jlwd" path="res://Game/Characters/bunny.tscn" id="1_32k5w"]
 [ext_resource type="Texture2D" uid="uid://bt4rs6axjdbdc" path="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="1_ybic6"]
+[ext_resource type="PackedScene" uid="uid://0dwvqose3qeo" path="res://Game/UI/battle_ui.tscn" id="3_llgdd"]
+[ext_resource type="PackedScene" uid="uid://bld7y0wngi0xm" path="res://Game/Characters/dark_bunny.tscn" id="3_shl6i"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_02ucq"]
 texture = ExtResource("1_ybic6")
@@ -92,4 +94,9 @@ position = Vector2(961, 541)
 zoom = Vector2(3, 3)
 
 [node name="Bunny" parent="." instance=ExtResource("1_32k5w")]
-position = Vector2(1018, 491)
+position = Vector2(810, 538)
+
+[node name="DarkBunny" parent="." instance=ExtResource("3_shl6i")]
+position = Vector2(1108, 538)
+
+[node name="BattleUI" parent="." instance=ExtResource("3_llgdd")]
