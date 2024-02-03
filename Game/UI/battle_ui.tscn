@@ -3,13 +3,105 @@
 [node name="BattleUI" type="CanvasLayer"]
 
 [node name="ActionPicking" type="Control" parent="."]
+visible = false
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 34.0
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ActionPicking"]
+layout_mode = 0
+offset_left = -207.0
+offset_top = -331.0
+offset_bottom = -2.0
+
+size_flags_vertical = 3
+text = "Attack"
+
+[node name="Protect" type="Button" parent="ActionPicking/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Protect"
+
+[node name="Item" type="Button" parent="ActionPicking/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Item"
 
 [node name="AttackMovesDisplay" type="Control" parent="."]
+visible = false
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AttackMovesDisplay"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -208.0
+offset_top = -264.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Slash" type="Button" parent="AttackMovesDisplay/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Slash"
+
+[node name="High Jump Kick" type="Button" parent="AttackMovesDisplay/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "High Jump Kick"
+
+[node name="Magic Carrot Shots" type="Button" parent="AttackMovesDisplay/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Magic Carrots"
+
+[node name="BattleText" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
 offset_right = 40.0
-offset_bottom = 40.0
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="BattleText"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -266.0
+offset_right = 1169.0
+grow_vertical = 0
+color = Color(0, 0, 0, 0.290196)
+
+[node name="Label" type="Label" parent="BattleText/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -582.5
+offset_top = -132.0
+offset_right = 583.5
+offset_bottom = 133.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Text"
