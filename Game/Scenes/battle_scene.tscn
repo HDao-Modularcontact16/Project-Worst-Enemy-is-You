@@ -94,9 +94,9 @@ position = Vector2(961, 541)
 zoom = Vector2(3, 3)
 
 [node name="Bunny" parent="." instance=ExtResource("1_32k5w")]
-position = Vector2(810, 538)
+position = Vector2(796, 476)
 
 [node name="DarkBunny" parent="." instance=ExtResource("3_shl6i")]
-position = Vector2(1108, 538)
+position = Vector2(1132, 474)
 
 [node name="BattleUI" parent="." instance=ExtResource("3_llgdd")]
