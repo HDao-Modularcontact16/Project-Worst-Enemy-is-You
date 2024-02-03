@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwo1s02561kwc"]
+[gd_scene load_steps=8 format=3 uid="uid://dwo1s02561kwc"]
 
 [ext_resource type="PackedScene" uid="uid://bbphd13y6jlwd" path="res://Game/Characters/bunny.tscn" id="1_32k5w"]
+[ext_resource type="Script" path="res://Game/Scripts/Scenes/battle_calcs.gd" id="1_hvh18"]
 [ext_resource type="Texture2D" uid="uid://bt4rs6axjdbdc" path="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="1_ybic6"]
 [ext_resource type="PackedScene" uid="uid://0dwvqose3qeo" path="res://Game/UI/battle_ui.tscn" id="3_llgdd"]
 [ext_resource type="PackedScene" uid="uid://bld7y0wngi0xm" path="res://Game/Characters/dark_bunny.tscn" id="3_shl6i"]
@@ -83,6 +84,7 @@ texture = ExtResource("1_ybic6")
 sources/0 = SubResource("TileSetAtlasSource_02ucq")
 
 [node name="Battle Scene" type="Node2D"]
+script = ExtResource("1_hvh18")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_kmxnk")
