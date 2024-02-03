@@ -19,6 +19,8 @@ offset_left = -207.0
 offset_top = -331.0
 offset_bottom = -2.0
 
+[node name="Attack" type="Button" parent="ActionPicking/VBoxContainer"]
+layout_mode = 2
 size_flags_vertical = 3
 text = "Attack"
 
